@@ -12,7 +12,7 @@ env.hosts = ['18.233.66.148', '54.236.184.219']
 def do_deploy(archive_path):
     """function that deploys archive to remote servers"""
 
-    if os.path.isfiile(archive_path) is False:
+    if os.path.isfile(archive_path) is False:
         return False
 
     dir = "/data/web_static/releases/"
