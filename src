@@ -1,0 +1,14 @@
+#!/bin/bash
+pacman uninstall python-Fabric
+sudo apt-get install libffi-dev
+sudo apt-get install libssl-dev
+sudo apt-get install build-essential
+sudo apt-get install python3.4-dev
+sudo apt-get install libpython3-dev
+pacman -S python-pyparsing
+pacman -S python-appdirs
+pacman -S python-setuptools==40.1.0
+pacman -S python-cryptography==2.8
+pacman -S python-bcrypt==3.1.7
+pacman -S python-PyNaCl==1.3.0
+pacman -S python-Fabric3==1.14.post1

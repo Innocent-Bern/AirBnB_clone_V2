@@ -12,7 +12,6 @@ def do_pack():
 
     if os.path.isdir('./versions') is False:
         os.mkdir('./versions')
-        print("Made dir")
 
     cur = datetime.utcnow()
     fname = "web_static_{}{}{}{}{}{}.tgz".format(cur.year,

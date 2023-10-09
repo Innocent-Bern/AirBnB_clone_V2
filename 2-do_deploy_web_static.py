@@ -19,9 +19,9 @@ def do_deploy(archive_path):
     file = archive_path.split('/')[-1]
     fname = file.split('.')[0]
     put(archive_path, '/tmp/{}'.format(file))
-    run("sudo tar -xf /tmp/{} -C {}/{}".format(file, dir, name))
+    run("sudo tar -xf /tmp/{} -C {}/{}".format(file, dir, fname))
     run("sudo rm /tmp/{}".format(file))
     run("sudo unlink /data/web_static/current")
     run("sudo ln -sf /data/web_static/releases/{} /data/web_static/current".
-        format(name))
+        format(fname))
     return True
